@@ -41,7 +41,6 @@ router.post('/delete/:id', async(req, res, next) => {
 });
 router.get('/show/:id', async (req, res, next) => {
     const characterId = parseInt(req.params.id);
-
     try {
       const character = await getCharacterById(characterId);
       if (!character) {

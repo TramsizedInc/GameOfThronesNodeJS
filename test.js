@@ -27,4 +27,3 @@ async function testGetCharactersById() {
 }
 
 testGetCharactersById();
-/* testGetCharacters(); */
