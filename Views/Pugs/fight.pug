@@ -1,0 +1,23 @@
+include header.pug 
+
+h1.text-center.my-4 Game of Thrones Characters
+
+.container.mt-4
+  .row
+    .col-md-6
+      select.form-select.mb-3
+        each character in characters
+          option(value=`${character.id}`)= character.name
+
+ 
+    .col-md-6
+      select.form-select.mb-3
+        each character in characters
+          option(value=`${character.id}`)= character.name
+
+
+.row.mt-3
+  .col-12.text-center
+    button.btn.btn-primary(type="button") Fight
+
+

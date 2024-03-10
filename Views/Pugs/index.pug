@@ -1,0 +1,14 @@
+include header.pug
+h1.text-center.my-4 Game of Thrones Characters
+  .container
+    .row
+      each character in characters
+        .col-md-4.mb-4
+          .card
+            .card-body
+              h4.card-title= character.name
+              p.card-text House: #{character.house}
+              .d-flex.justify-content-between  
+                a.btn.btn-primary(href=`/character/show/${character.id}`) View Details
+                form(action=`/character/delete/${character.id}`, method="POST")
+                  button.btn.btn-danger(type="submit") Delete

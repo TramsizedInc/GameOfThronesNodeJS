@@ -1,0 +1,15 @@
+include header.pug
+
+.container.mt-5
+  .row
+    .col-md-8.offset-md-2
+      .card.mb-4
+        img.card-img-top(src="/images/placeholderimage.png", alt="Character Image")
+        .card-body
+          h5.card-title.text-center= character.name
+          p.card-text.text-center House: #{character.house}
+          p.card-text.text-center Attack: #{character.attack}
+          p.card-text.text-center Defense: #{character.defense}
+          // Add more fields as needed
+          .text-center
+            a.btn.btn-primary(href='/character/index') Back to list
