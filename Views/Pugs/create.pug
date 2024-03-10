@@ -3,16 +3,16 @@ include header.pug
       h2.mt-5 Add a New Game of Thrones Character
       form(action="/character/create", method="POST") 
         .form-group
-          label(for="name") Character Name 
+          label(for="name") Name of Character
           input#name.form-control(type="text", name="name", required=true)
         .form-group 
-          label(for="house") House  
+          label(for="house") House of
           input#house.form-control(type="text", name="house", required=true)
         .form-group
-          label(for="attack") Attack
+          label(for="attack") Attack power
           input#house.form-control(type="number", name="attack", required=true)
         .form-group
-          label(for="defense") Defense
+          label(for="defense") Defense power
           input#house.form-control(type="number", name="defense", required=true)
           br
         button.btn.btn-primary(type="submit") Submit

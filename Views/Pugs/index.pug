@@ -9,6 +9,6 @@ h1.text-center.my-4 Game of Thrones Characters
               h4.card-title= character.name
               p.card-text House: #{character.house}
               .d-flex.justify-content-between
-                a.btn.btn-primary(href=`/character/show/${character.id}`) View Details
+                a.btn.btn-primary(href=`/character/show/${character.id}`) Details
                 form(action=`/character/delete/${character.id}`, method="POST")
                   button.btn.btn-danger(type="submit") Delete
